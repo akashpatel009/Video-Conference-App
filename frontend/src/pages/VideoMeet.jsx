@@ -11,7 +11,7 @@ import MicOffIcon from '@mui/icons-material/MicOff'
 import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare'
 import ChatIcon from '@mui/icons-material/Chat'
-import server from '../environment'; 
+import server from '../environment';
 
 const server_url = server;
 
@@ -368,7 +368,7 @@ export default function VideoMeetComponent() {
     }
 
     let silence = () => {
-        let ctx = new AudioContext()  
+        let ctx = new AudioContext()
         let oscillator = ctx.createOscillator()
         let dst = oscillator.connect(ctx.createMediaStreamDestination())
         oscillator.start()
@@ -517,8 +517,7 @@ export default function VideoMeetComponent() {
 
                         <Badge badgeContent={newMessages} max={999} color='orange'>
                             <IconButton onClick={() => setModal(!showModal)} style={{ color: "white" }}>
-                                <ChatIcon />  
-                                </IconButton>
+                                <ChatIcon />                        </IconButton>
                         </Badge>
 
                     </div>
