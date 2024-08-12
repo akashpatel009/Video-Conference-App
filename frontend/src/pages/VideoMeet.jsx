@@ -15,6 +15,7 @@ import server from '../environment';
 
 const server_url = server;
 
+
 var connections = {};
 
 const peerConfigConnections = {
@@ -397,6 +398,7 @@ export default function VideoMeetComponent() {
             getDislayMedia();
         }
     }, [screen])
+
     let handleScreen = () => {
         setScreen(!screen);
     }
