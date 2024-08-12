@@ -130,6 +130,7 @@ export default function VideoMeetComponent() {
 
 
     }, [video, audio])
+    
     let getMedia = () => {
         setVideo(videoAvailable);
         setAudio(audioAvailable);
